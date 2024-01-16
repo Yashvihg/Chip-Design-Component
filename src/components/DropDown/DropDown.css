@@ -1,0 +1,42 @@
+.dropdown {
+  width: 35%;
+  margin: auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  overflow: auto;
+  height: 30rem;
+}
+
+.dropdown-item {
+  background-color: #ffffff;
+  color: rgb(51, 51, 51);
+  font-weight: 600;
+  padding: 0.3rem;
+  margin: 0.5rem auto;
+}
+
+.dropdown-item:hover {
+  background-color: #e9e8e8;
+}
+
+.avatar {
+  color: rgb(3, 213, 255);
+  font-size: 2rem;
+  font-weight: 700;
+  padding: 0.5rem;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+}
+
+.email {
+  color: rgb(195, 195, 195);
+  padding-left: 2rem;
+  font-size: 0.7rem;
+}
+
+.name {
+  width: 12rem;
+  text-align: left;
+}
