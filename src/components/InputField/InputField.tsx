@@ -26,7 +26,10 @@ const InputField: React.FC<InputFieldProps> = ({
 
   const handleChipDelete = (chip: Chip) => {
     setChip(chips.filter((c) => c.id !== chip.id));
-    setUsers([...users, { id: chip.id, name: chip.label, email: chip.email }]);
+    setUsers([
+      ...users,
+      { id: chip.id, name: chip.label, image: chip.image, email: chip.email },
+    ]);
     setHighlightedChip(null);
   };
 
@@ -52,6 +55,7 @@ const InputField: React.FC<InputFieldProps> = ({
           label={chip.label}
           onDelete={() => handleChipDelete(chip)}
           email=""
+          image={chip.image}
           highlightedChip={highlightedChip}
           currentChip={chip}
         />

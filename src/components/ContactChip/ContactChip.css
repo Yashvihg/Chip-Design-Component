@@ -1,10 +1,9 @@
 .chip {
   background: #d0cfcf;
   font-weight: 500;
-  border-radius: 1.5rem;
-  height: 1.5rem;
+  border-radius: 15rem;
+  height: 2.3rem;
   margin: 0.2rem;
-  width: 100%s;
   display: flex;
   justify-content: center;
   white-space: nowrap;
@@ -15,10 +14,10 @@
 }
 
 .avatar-chip {
-  color: rgb(255, 125, 3);
-  font-size: 2rem;
-  font-weight: 700;
-  padding: 0.5rem 0.5rem 0.5rem 0;
+  height: 2.7rem;
+  width: 2.7rem;
+  border-radius: 15rem;
+  margin-right: 0.5rem;
 }
 
 .close-button {

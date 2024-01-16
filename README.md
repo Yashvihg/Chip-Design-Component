@@ -76,3 +76,6 @@ On pressing backspace twice: deleted - can delete with button as well
 
 Filteration
 ![Alt text](Filter.PNG)
+
+Enhancements and moving dropdown
+![Alt text](image-1.png)

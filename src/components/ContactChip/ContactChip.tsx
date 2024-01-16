@@ -1,5 +1,4 @@
 import React from "react";
-import { RxAvatar } from "react-icons/rx";
 import { IoClose } from "react-icons/io5";
 import "./ContactChip.css";
 import { Chip } from "../../App";
@@ -8,6 +7,7 @@ interface ChipProps {
   label: string;
   onDelete: () => void;
   email: string;
+  image: string;
   highlightedChip: Chip | null;
   currentChip: Chip;
 }
@@ -15,6 +15,7 @@ interface ChipProps {
 const ContactChip: React.FC<ChipProps> = ({
   label,
   onDelete,
+  image,
   highlightedChip,
   currentChip,
 }) => {
@@ -22,7 +23,9 @@ const ContactChip: React.FC<ChipProps> = ({
     <div
       className={highlightedChip === currentChip ? "highlighted chip" : "chip"}
     >
-      <RxAvatar className="avatar-chip" /> <p>{label}</p>
+      {/* <RxAvatar className="avatar-chip" />  */}
+      <img src={image} alt={image} className="avatar-chip" />
+      <p>{label}</p>
       <IoClose className="close-button" onClick={onDelete} />
     </div>
   );

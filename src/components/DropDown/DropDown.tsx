@@ -1,13 +1,13 @@
 import React from "react";
 import "./DropDown.css";
 import { dataFormat } from "../../App";
-import { RxAvatar } from "react-icons/rx";
 
 interface DropdownProps {
   items: dataFormat[];
   inputValue: string;
   onItemClick: (item: dataFormat) => void;
   isDropdownVisible: boolean;
+  marginRight: number;
 }
 
 const DropDown: React.FC<DropdownProps> = ({
@@ -15,11 +15,15 @@ const DropDown: React.FC<DropdownProps> = ({
   inputValue,
   onItemClick,
   isDropdownVisible,
+  marginRight,
 }) => {
   return (
     <div className="">
       {isDropdownVisible ? (
-        <div className="dropdown">
+        <div
+          className="dropdown"
+          style={{ marginLeft: `${340 + marginRight}px` }}
+        >
           {items
             .filter((item) =>
               item.name.toLowerCase().includes(inputValue.toLowerCase())
@@ -33,7 +37,12 @@ const DropDown: React.FC<DropdownProps> = ({
                 }}
               >
                 <div className="item">
-                  <RxAvatar className="avatar" />
+                  {/* <RxAvatar className="avatar" /> */}
+                  <img
+                    src={item.image}
+                    alt={item.image}
+                    className="avatar-chip"
+                  />
                   <div className="name">{item.name}</div>
                   <div className="email">{item.email}</div>
                 </div>
