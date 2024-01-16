@@ -10,6 +10,10 @@
   white-space: nowrap;
 }
 
+.highlighted {
+  background-color: #f7baba;
+}
+
 .avatar-chip {
   color: rgb(255, 125, 3);
   font-size: 2rem;

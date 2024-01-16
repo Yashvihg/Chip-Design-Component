@@ -39,19 +39,17 @@ const App: React.FC = () => {
     setInputValue(value);
   };
 
-  const handleInputKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
-    if (e.key === "Backspace" && inputValue === "" && chips.length > 0) {
-      e.preventDefault();
-      const lastChip = chips[chips.length - 1];
-      console.log("Backspaced once TRY TO HIGHLIGHT");
+  // const handleInputKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
+  //   if (e.key === "Backspace" && inputValue === "" && chips.length > 0) {
+  //     const lastChip = chips[chips.length - 1];
 
-      setChips(chips.slice(0, -1));
-      setUsers([
-        ...users,
-        { id: lastChip.id, name: lastChip.label, email: lastChip.email },
-      ]);
-    }
-  };
+  //     setChips(chips.slice(0, -1));
+  //     setUsers([
+  //       ...users,
+  //       { id: lastChip.id, name: lastChip.label, email: lastChip.email },
+  //     ]);
+  //   }
+  // };
 
   // const handleInputKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
   //   if (e.key === "Backspace" && inputValue === "" && chips.length > 0) {
@@ -78,13 +76,12 @@ const App: React.FC = () => {
   // const handleInputBlur = () => {
   //   setIsDropdownVisible(false);
   // };
-
+  // onKeyDown={handleInputKeyDown}
   return (
     <div className="App">
       <InputField
         value={inputValue}
         onChange={handleInputValue}
-        onKeyDown={handleInputKeyDown}
         onClickHandler={handleInputClick}
         users={users}
         setUsers={setUsers}
