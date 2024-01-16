@@ -63,7 +63,7 @@ const InputField: React.FC<InputFieldProps> = ({
         onChange={(e) => onChange(e.target.value)}
         onKeyDown={handleInputKeyDown}
         onClick={onClickHandler}
-        placeholder="Type to filter items"
+        placeholder="Add new user..."
       />
     </div>
   );

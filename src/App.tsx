@@ -49,6 +49,7 @@ const App: React.FC = () => {
 
   return (
     <div className="App">
+      <h1 className="heading">Pick Users</h1>
       <InputField
         value={inputValue}
         onChange={handleInputValue}

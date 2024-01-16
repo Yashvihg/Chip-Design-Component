@@ -1,7 +1,8 @@
 .input-container {
-  border: 1px solid black;
+  border: 1px solid rgb(219, 219, 219);
+  border-bottom: 4px solid rgb(0, 110, 255);
   width: 50%;
-  margin: 5rem auto;
+  margin: 4rem auto;
   margin-bottom: 0.2rem;
   padding: 1rem;
   display: flex;
@@ -14,4 +15,5 @@
   border: none;
   height: auto;
   flex: 1;
+  outline: none;
 }
