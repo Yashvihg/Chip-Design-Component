@@ -1,8 +1,8 @@
 import React, { useEffect, useRef, useState } from "react";
+import "./App.css";
 import InputField from "./components/InputField/InputField";
 import DropDown from "./components/DropDown/DropDown";
 import data from "./ChipData.json";
-import "./App.css";
 
 export interface dataFormat {
   id: number;
