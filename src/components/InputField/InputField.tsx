@@ -6,7 +6,6 @@ import { Chip, dataFormat } from "../../App";
 interface InputFieldProps {
   value: string;
   onChange: (value: string) => void;
-  // onKeyDown: (e: KeyboardEvent<HTMLInputElement>) => void;
   onClickHandler: () => void;
   users: dataFormat[];
   setUsers: React.Dispatch<React.SetStateAction<dataFormat[]>>;
@@ -24,10 +23,8 @@ const InputField: React.FC<InputFieldProps> = ({
   setChip,
 }) => {
   const [highlightedChip, setHighlightedChip] = useState<Chip | null>(null);
-  // const [isHighlighted, setIsHighlighted] = useState<boolean>(false);
 
   const handleChipDelete = (chip: Chip) => {
-    console.log("DELETE button", chip);
     setChip(chips.filter((c) => c.id !== chip.id));
     setUsers([...users, { id: chip.id, name: chip.label, email: chip.email }]);
     setHighlightedChip(null);
@@ -35,23 +32,15 @@ const InputField: React.FC<InputFieldProps> = ({
 
   const handleInputKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
     if (e.key === "Backspace" && value === "" && chips.length > 0) {
-      // const lastChip = chips[chips.length - 1];
       e.preventDefault();
       if (highlightedChip) {
-        // Delete the highlighted chip on the second Backspace press
+        // Delete the highlighted chip on - second Backspace press
         handleChipDelete(highlightedChip);
       } else {
-        // Highlight the last chip on the first Backspace press
+        // Highlight the last chip on - first Backspace press
         const lastChip = chips[chips.length - 1];
-        console.log("Highlight:", lastChip);
         setHighlightedChip(lastChip);
-        // setIsHighlighted(true);
       }
-      // setChip(chips.slice(0, -1));
-      // setUsers([
-      //   ...users,
-      //   { id: lastChip.id, name: lastChip.label, email: lastChip.email },
-      // ]);
     }
   };
 

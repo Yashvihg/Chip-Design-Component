@@ -15,7 +15,6 @@ interface ChipProps {
 const ContactChip: React.FC<ChipProps> = ({
   label,
   onDelete,
-  email,
   highlightedChip,
   currentChip,
 }) => {
