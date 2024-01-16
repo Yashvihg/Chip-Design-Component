@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Chip-Design-Component/static/css/main.00423b97.css",
+    "main.js": "/Chip-Design-Component/static/js/main.11625803.js",
+    "static/js/787.564b542a.chunk.js": "/Chip-Design-Component/static/js/787.564b542a.chunk.js",
+    "index.html": "/Chip-Design-Component/index.html",
+    "main.00423b97.css.map": "/Chip-Design-Component/static/css/main.00423b97.css.map",
+    "main.11625803.js.map": "/Chip-Design-Component/static/js/main.11625803.js.map",
+    "787.564b542a.chunk.js.map": "/Chip-Design-Component/static/js/787.564b542a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.00423b97.css",
+    "static/js/main.11625803.js"
+  ]
+}
