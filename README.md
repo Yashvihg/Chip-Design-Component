@@ -44,3 +44,35 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+## Zepto Assignment:
+
+Created a component from scratch which implements chips into an input field.
+
+#### Included functionalities of:
+
+- Search and Filter
+- Deletion by backspace and button
+- Highlight before Deletion
+- Dropdown select and type input
+
+Tech stack used;
+React.js with typescript.
+
+Main page
+![Alt text](image.png)
+
+On clicking the input field appearance of dropdown
+![Alt text](clickInput.PNG)
+
+Adding users as per choice
+![Alt text](selectUsers.PNG)
+
+On pressing backspace once
+![Alt text](oneBackspace.PNG)
+
+On pressing backspace twice: deleted - can delete with button as well
+![Alt text](deleted.PNG)
+
+Filteration
+![Alt text](Filter.PNG)
